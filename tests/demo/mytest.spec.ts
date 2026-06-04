@@ -3,7 +3,7 @@ import { test, expect } from "@playwright/test";
 test("Verify the title", async ({ page }) => {
   await page.goto("https://katalon-demo-cura.herokuapp.com/");
   await expect(page).toHaveTitle("CURA Healthcare Service");
-  await window.close();
+  await page.close();
 });
 test('test', async ({ page }) => {
   await page.goto('https://katalon-demo-cura.herokuapp.com/');
